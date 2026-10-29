@@ -474,6 +474,13 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* CREATOR ATTRIBUTION STRIP */}
+      <div className="bg-slate-950 py-4 px-4 text-center border-t border-slate-800/80">
+        <p className="text-xs sm:text-sm font-medium text-slate-300 tracking-wide">
+          It is Created By <span className="text-amber-400 font-bold tracking-wider">Amit Saraswat</span>
+        </p>
+      </div>
     </div>
   );
 }

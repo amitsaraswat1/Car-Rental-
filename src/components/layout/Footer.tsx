@@ -180,9 +180,14 @@ export default function Footer() {
 
         {/* Legal & Copyright Strip */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>
-            © {currentYear} {siteConfig.businessName}. All rights reserved. Commercial Car Rental with Driver.
-          </p>
+          <div>
+            <p>
+              © {currentYear} {siteConfig.businessName}. All rights reserved. Commercial Car Rental with Driver.
+            </p>
+            <p className="text-xs text-slate-400 mt-1">
+              It is Created By <span className="text-amber-400 font-semibold">Amit Saraswat</span>
+            </p>
+          </div>
 
           <div className="flex flex-wrap items-center gap-4 text-xs text-slate-400">
             <Link href="/terms" className="hover:text-white transition-colors">
