@@ -68,7 +68,7 @@ export default function ServicesPage() {
                     {service.fullDescription}
                   </p>
 
-                  <div className="p-4 rounded-2xl bg-amber-500/10 border border-amber-400/30 flex items-center justify-between">
+                  <div className="p-4 rounded-2xl bg-amber-500/10 border border-amber-400/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
                     <div>
                       <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block">Indicative Pricing</span>
                       <span className="text-base sm:text-lg font-extrabold text-slate-950">{service.startingPrice}</span>
@@ -76,10 +76,10 @@ export default function ServicesPage() {
 
                     <Link
                       href={`/contact?service=${encodeURIComponent(service.id)}`}
-                      className="px-5 py-2.5 rounded-xl bg-blue-900 hover:bg-blue-800 text-white font-bold text-xs sm:text-sm shadow-md transition-all flex items-center gap-1.5"
+                      className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-blue-900 hover:bg-blue-800 text-white font-bold text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-1.5"
                     >
                       <span>Get Free Quote</span>
-                      <ArrowRight className="w-3.5 h-3.5 text-amber-400" />
+                      <ArrowRight className="w-3.5 h-3.5 text-amber-400 shrink-0" />
                     </Link>
                   </div>
 

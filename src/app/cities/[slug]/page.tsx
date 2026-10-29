@@ -92,17 +92,17 @@ export default async function CityPage({ params }: CityPageProps) {
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-wrap items-center gap-3 pt-3">
+          <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 pt-3">
             <Link
               href={`/contact?city=${encodeURIComponent(city.slug)}`}
-              className="px-6 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm shadow-lg transition-all"
+              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm shadow-lg transition-all text-center"
             >
               Get Free Quote for {city.name}
             </Link>
 
             <a
               href={`tel:${siteConfig.phone}`}
-              className="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs sm:text-sm border border-slate-700 transition-all flex items-center gap-2"
+              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs sm:text-sm border border-slate-700 transition-all flex items-center justify-center gap-2"
             >
               <Phone className="w-4 h-4 text-amber-400" />
               <span>Call Helpline</span>
@@ -112,7 +112,7 @@ export default async function CityPage({ params }: CityPageProps) {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm transition-all flex items-center gap-2 shadow-md"
+              className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm transition-all flex items-center justify-center gap-2 shadow-md"
             >
               <MessageCircle className="w-4 h-4" />
               <span>Inquire on WhatsApp</span>

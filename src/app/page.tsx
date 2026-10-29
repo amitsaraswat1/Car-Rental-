@@ -51,20 +51,20 @@ export default function HomePage() {
             </p>
 
             {/* Hero Action Buttons */}
-            <div className="flex flex-wrap items-center gap-4 pt-2">
+            <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 sm:gap-4 pt-2">
               <a
                 href="#quick-inquiry"
-                className="px-6 py-4 rounded-2xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-sm sm:text-base shadow-xl transition-all flex items-center gap-2 active:scale-95"
+                className="w-full sm:w-auto px-6 py-3.5 sm:py-4 rounded-2xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-sm sm:text-base shadow-xl transition-all flex items-center justify-center gap-2 active:scale-95 text-center"
               >
                 <span>Get a Free Quote</span>
-                <ArrowRight className="w-4 h-4 text-slate-950" />
+                <ArrowRight className="w-4 h-4 text-slate-950 shrink-0" />
               </a>
 
               <a
                 href={`tel:${siteConfig.phone}`}
-                className="px-6 py-4 rounded-2xl bg-slate-800/90 hover:bg-slate-700 text-white border border-slate-700 font-bold text-sm sm:text-base transition-all flex items-center gap-2 active:scale-95"
+                className="w-full sm:w-auto px-6 py-3.5 sm:py-4 rounded-2xl bg-slate-800/90 hover:bg-slate-700 text-white border border-slate-700 font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 active:scale-95 text-center"
               >
-                <Phone className="w-4 h-4 text-amber-400" />
+                <Phone className="w-4 h-4 text-amber-400 shrink-0" />
                 <span>Call {siteConfig.displayPhone}</span>
               </a>
 
@@ -72,9 +72,9 @@ export default function HomePage() {
                 href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hello Royal Route, I would like to inquire about a car rental with driver.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-4 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm sm:text-base transition-all flex items-center gap-2 active:scale-95 shadow-md"
+                className="w-full sm:w-auto px-6 py-3.5 sm:py-4 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 active:scale-95 shadow-md text-center"
               >
-                <MessageCircle className="w-4 h-4" />
+                <MessageCircle className="w-4 h-4 shrink-0" />
                 <span>WhatsApp Us</span>
               </a>
             </div>
@@ -446,19 +446,19 @@ export default function HomePage() {
             Get an instant custom quote for your airport pickup, city tour, or outstation journey. Our travel experts are available 24 hours a day.
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-3">
+          <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center gap-3 sm:gap-4 pt-3">
             <Link
               href="/contact"
-              className="px-7 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-sm sm:text-base shadow-xl transition-all"
+              className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-sm sm:text-base shadow-xl transition-all text-center"
             >
               Request Free Custom Quote
             </Link>
 
             <a
               href={`tel:${siteConfig.phone}`}
-              className="px-7 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-bold text-sm sm:text-base transition-all flex items-center gap-2"
+              className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 text-center"
             >
-              <Phone className="w-4 h-4 text-amber-400" />
+              <Phone className="w-4 h-4 text-amber-400 shrink-0" />
               <span>Call Helpline ({siteConfig.displayPhone})</span>
             </a>
 
@@ -466,9 +466,9 @@ export default function HomePage() {
               href={`https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent("Hello Royal Route, I need an urgent car booking quote.")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-7 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm sm:text-base transition-all flex items-center gap-2"
+              className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 shadow-md text-center"
             >
-              <MessageCircle className="w-4 h-4" />
+              <MessageCircle className="w-4 h-4 shrink-0" />
               <span>Chat on WhatsApp</span>
             </a>
           </div>

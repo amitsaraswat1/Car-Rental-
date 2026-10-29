@@ -80,7 +80,10 @@ export default function RatesPage() {
           </div>
 
           <div className="overflow-x-auto rounded-3xl border border-slate-200 shadow-xs bg-white">
-            <table className="w-full text-left border-collapse text-xs sm:text-sm">
+            <p className="text-[11px] text-slate-400 sm:hidden px-4 py-2 bg-slate-50 border-b border-slate-100 flex items-center gap-1">
+              <span>👉</span> Swipe horizontally to view full rate card
+            </p>
+            <table className="w-full text-left border-collapse text-xs sm:text-sm min-w-[620px]">
               <thead>
                 <tr className="bg-slate-900 text-white font-bold">
                   <th className="py-4 px-6 rounded-tl-3xl">Vehicle Category</th>
@@ -143,7 +146,10 @@ export default function RatesPage() {
           </div>
 
           <div className="overflow-x-auto rounded-3xl border border-slate-200 shadow-xs bg-white">
-            <table className="w-full text-left border-collapse text-xs sm:text-sm">
+            <p className="text-[11px] text-slate-400 sm:hidden px-4 py-2 bg-slate-50 border-b border-slate-100 flex items-center gap-1">
+              <span>👉</span> Swipe horizontally to view full outstation tariff
+            </p>
+            <table className="w-full text-left border-collapse text-xs sm:text-sm min-w-[640px]">
               <thead>
                 <tr className="bg-slate-900 text-white font-bold">
                   <th className="py-4 px-6 rounded-tl-3xl">Vehicle Category</th>
@@ -206,7 +212,10 @@ export default function RatesPage() {
           </div>
 
           <div className="overflow-x-auto rounded-3xl border border-slate-200 shadow-xs bg-white">
-            <table className="w-full text-left border-collapse text-xs sm:text-sm">
+            <p className="text-[11px] text-slate-400 sm:hidden px-4 py-2 bg-slate-50 border-b border-slate-100 flex items-center gap-1">
+              <span>👉</span> Swipe horizontally to view airport transfer fares
+            </p>
+            <table className="w-full text-left border-collapse text-xs sm:text-sm min-w-[540px]">
               <thead>
                 <tr className="bg-slate-900 text-white font-bold">
                   <th className="py-4 px-6 rounded-tl-3xl">Popular Airport Route</th>

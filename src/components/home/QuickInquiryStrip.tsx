@@ -161,11 +161,11 @@ export default function QuickInquiryStrip() {
             No advance required to request a quote • Zero spam guaranteed
           </p>
 
-          <div className="flex items-center gap-3 w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
             <button
               type="button"
               onClick={(e) => handleSubmit(e, "whatsapp")}
-              className="flex-1 sm:flex-none px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-95"
+              className="w-full sm:w-auto px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-95"
             >
               <MessageCircle className="w-4 h-4" />
               <span>Inquire via WhatsApp</span>
@@ -173,7 +173,7 @@ export default function QuickInquiryStrip() {
 
             <button
               type="submit"
-              className="flex-1 sm:flex-none px-6 py-3 rounded-xl bg-blue-900 hover:bg-blue-800 text-white font-bold text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-95"
+              className="w-full sm:w-auto px-6 py-3 rounded-xl bg-blue-900 hover:bg-blue-800 text-white font-bold text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer active:scale-95"
             >
               <span>Get Full Quote</span>
               <ArrowRight className="w-4 h-4 text-amber-400" />

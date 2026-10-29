@@ -47,17 +47,17 @@ export default function CarCard({ car, featured = false }: CarCardProps) {
       </div>
 
       {/* Capacity & Fuel Row */}
-      <div className="px-6 py-3 bg-slate-50/80 border-y border-slate-100 flex items-center justify-between text-xs text-slate-700 font-semibold">
+      <div className="px-4 sm:px-6 py-3 bg-slate-50/80 border-y border-slate-100 flex flex-wrap sm:flex-nowrap items-center justify-between gap-2 text-[11px] sm:text-xs text-slate-700 font-semibold">
         <div className="flex items-center gap-1.5" title="Passenger Seating Capacity">
-          <Users className="w-4 h-4 text-blue-900" />
-          <span>{car.seats} Passengers</span>
+          <Users className="w-3.5 h-3.5 text-blue-900 shrink-0" />
+          <span>{car.seats} Seats</span>
         </div>
         <div className="flex items-center gap-1.5" title="Luggage Capacity">
-          <Luggage className="w-4 h-4 text-blue-900" />
-          <span>{car.luggage} Suitcases</span>
+          <Luggage className="w-3.5 h-3.5 text-blue-900 shrink-0" />
+          <span>{car.luggage} Bags</span>
         </div>
         <div className="flex items-center gap-1.5" title="Fuel Type">
-          <Fuel className="w-4 h-4 text-blue-900" />
+          <Fuel className="w-3.5 h-3.5 text-blue-900 shrink-0" />
           <span>{car.fuelType.split("/")[0]}</span>
         </div>
       </div>
@@ -98,31 +98,31 @@ export default function CarCard({ car, featured = false }: CarCardProps) {
       </div>
 
       {/* Action Footer */}
-      <div className="p-6 pt-0 mt-auto flex items-center gap-2">
+      <div className="p-4 sm:p-6 pt-0 mt-auto flex items-center gap-2">
         <Link
           href={`/contact?car=${encodeURIComponent(car.id)}`}
-          className="flex-1 py-3 px-4 rounded-xl bg-blue-900 hover:bg-blue-800 text-white font-bold text-xs sm:text-sm text-center shadow-md transition-all flex items-center justify-center gap-2"
+          className="flex-1 py-3 px-3 sm:px-4 rounded-xl bg-blue-900 hover:bg-blue-800 text-white font-bold text-xs sm:text-sm text-center shadow-md transition-all flex items-center justify-center gap-1.5"
         >
           <span>Enquire for This Car</span>
-          <ArrowRight className="w-4 h-4 text-amber-400" />
+          <ArrowRight className="w-3.5 h-3.5 text-amber-400 shrink-0" />
         </Link>
 
         <a
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="p-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white transition-all shadow-md"
+          className="p-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white transition-all shadow-md shrink-0"
           title="Chat on WhatsApp about this car"
         >
-          <MessageCircle className="w-5 h-5" />
+          <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
         </a>
 
         <a
           href={`tel:${siteConfig.phone}`}
-          className="p-3 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100 transition-all"
+          className="p-3 rounded-xl border border-slate-200 text-slate-700 hover:bg-slate-100 transition-all shrink-0"
           title="Call helpline for instant quote"
         >
-          <Phone className="w-5 h-5 text-amber-500" />
+          <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-amber-500" />
         </a>
       </div>
     </div>
