@@ -1,5 +1,24 @@
 [
   {
+    "name": "Amit Saraswat",
+    "phone": "8218301744",
+    "email": "",
+    "tripType": "outstation",
+    "city": "Delhi NCR",
+    "pickupLocation": "349 barola bypass",
+    "dropLocation": "ethtyj",
+    "pickupDate": "2026-10-31",
+    "pickupTime": "08:00 AM",
+    "returnDate": "",
+    "passengers": 4,
+    "carType": "Prime Sedan",
+    "message": "",
+    "id": "inq-1793357111240-532",
+    "status": "new",
+    "notes": "",
+    "createdAt": "2026-10-30T10:45:11.240Z"
+  },
+  {
     "id": "inq-103",
     "name": "Vikram Malhotra",
     "phone": "9920394857",

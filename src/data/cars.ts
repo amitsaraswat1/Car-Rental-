@@ -124,5 +124,28 @@ export const carsData: CarItem[] = [
     "description": "Jai shree ram",
     "isPopular": false,
     "id": "fortuner"
+  },
+  {
+    "name": "fvdsgs",
+    "category": "SUV",
+    "modelExamples": "fgergfhg",
+    "tagline": "ujyth",
+    "seats": 4,
+    "luggage": 2,
+    "fuelType": "CNG / Petrol / Diesel",
+    "hasAc": true,
+    "perKmRateOutstation": 12,
+    "localPackage8hr80km": 2100,
+    "airportTransferStarting": 1199,
+    "minKmPerDay": 250,
+    "features": [
+      "Experienced Professional Chauffeur",
+      "Air Conditioning with Climate Control",
+      "Clean & Sanitized Interiors"
+    ],
+    "imageUrl": "/images/cars/sedan.jpg",
+    "description": "56u536yuthgry",
+    "isPopular": false,
+    "id": "fvdsgs"
   }
 ];
